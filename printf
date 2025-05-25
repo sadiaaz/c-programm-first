@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    printf(
+        "Name : SADIA SAAD \n"
+        "Roll No : BSE-25S-615 \n"
+        "Semester : 1B \n"
+        "Batch : 25s \n"
+        "Department : Software Engineering \n"
+        "University : SMIU Sindh Madressatul Islam University \n"
+    );
+    return 0;
+}
