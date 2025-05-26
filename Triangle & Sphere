@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.1415927
+
+int main() {
+    float altitude, base, radius, t, s;
+
+    printf("\nEnter the value for Altitude of a Triangle: ");
+    scanf("%f", &altitude);
+    printf("\nEnter the value for Base of a Triangle: ");
+    scanf("%f", &base);
+    printf("\nEnter the value for Radius of a Sphere: ");
+    scanf("%f", &radius);
+
+    t = (1.0 / 2.0) * (altitude * base);  // Area of triangle
+    s = (4.0 / 3.0) * PI * pow(radius, 3); // Volume of sphere
+
+    if (t < s) {
+        printf("\nArea of Triangle = %.2f", t);
+        printf("\nVolume of Sphere = %.2f", s);
+    } else {
+        printf("\nVolume of Sphere = %.2f", s);
+        printf("\nArea of Triangle = %.2f", t);
+    }
+
+    return 0;
+} 
