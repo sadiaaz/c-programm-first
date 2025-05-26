@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    
+    printf("Enter Table No. (2-20): ");
+    scanf("%d", &n);
+    
+    if(n >= 2 && n <= 20) {
+        printf("\nMultiplication Table of %d\n", n);
+        for(int i = 1; i <= 12; i++) {
+            printf("%d × %d = %d\n", n, i, n*i);
+        }
+    } else {
+        printf("Error! Enter number between 2-20\n");
+    }
+    
+    return 0;
+}
