@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+    int temp;
+    printf("Enter the temperature: ");
+    scanf("%d", &temp);
+    if (temp < 80) {
+        if (temp > 60)
+            printf("nice day\n");
+    } else {
+        printf("sure it is hot\n");
+    }
+    return 0;
+}
